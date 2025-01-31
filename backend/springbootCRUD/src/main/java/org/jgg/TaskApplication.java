@@ -25,6 +25,7 @@ public class TaskApplication {
 
     @Bean
     public DataSource dataSource() {
+        System.out.println(dbUrl + " --- " + dbPassword + " --- " + dbUsername);
         return DataSourceBuilder.create()
                 .url(dbUrl)
                 .username(dbUsername)
