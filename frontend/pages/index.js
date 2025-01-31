@@ -10,7 +10,7 @@ export default function Home() {
   }, []);
 
   const fetchTasks = async () => {
-    const response = await fetch(process.env.NEXT_PUBLIC_FLASK_URL + "/tasks");
+    const response = await fetch(`${process.env.NEXT_PUBLIC_FLASK_URL}/tasks`);
     const data = await response.json();
     setTasks(data);
   };
