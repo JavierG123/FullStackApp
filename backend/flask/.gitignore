@@ -1,0 +1,16 @@
+# Python .gitignore
+
+# Entorno virtual
+venv/
+.env
+*.pyc
+__pycache__/
+
+# Configuración de IDEs
+.vscode/
+.idea/
+*.swp
+
+# Archivos de logs y caché
+*.log
+*.sqlite3
