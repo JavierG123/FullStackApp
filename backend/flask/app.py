@@ -1,8 +1,14 @@
 from flask import Flask, request, jsonify
 import os
 import requests
+from flask_cors import CORS
+
 
 app = Flask(__name__)
+
+# Habilitar CORS solo para el dominio up.railway.app
+CORS(app)
+
 
 SPRING_BOOT_URL = os.getenv("SPRING_BOOT_URL", "http://localhost:8080/tasks")
 
